@@ -10,6 +10,7 @@ const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 
 const app = express();
+const db = require('./helpers/db')(); //db yi dahil ettin.
 console.log(process.env.NAME);
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
